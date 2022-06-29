@@ -1,0 +1,78 @@
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-pokedex {
+    background-color: rgb(231, 235, 235);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.input {
+width: 97%;
+height: 30px;
+border-radius: 10px;
+border: 1px solid gray;
+text-align: center; 
+ 
+
+}
+
+.pokebola {
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
+}
+
+button {
+    border-color: white;
+    cursor: pointer;
+    user-select: none;
+    background-color: white;
+    margin-right: 20px;
+    
+    
+}
+
+h1 {
+    margin-right: 300px;
+    font-size: 50px;
+}
+
+.flecha-az {
+    width: 40px;
+    height: 40px;
+
+}
+
+.carta-detalles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+ 
+}
+
+.box-cartas {
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    height: 800px;
+    margin: 5px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
