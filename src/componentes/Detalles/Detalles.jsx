@@ -6,10 +6,11 @@ import { useParams } from "react-router-dom";
 
 const Detalles = (props) => {
   let { nombreEnUrl } = useParams();
-  const imagen = require(`../../imagenes/${pokemon.nombre.toLowerCase()}.png`);
+
   const pokemon = props.pokemones.find(
     (elem) => nombreEnUrl.toLowerCase() === elem.nombre.toLowerCase()
   );
+  const imagen = require(`../../imagenes/${pokemon.nombre.toLowerCase()}.png`);
 
   return (
     <div

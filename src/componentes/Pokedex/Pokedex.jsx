@@ -7,34 +7,27 @@ import styles from "./Pokedex.css";
 export const Pokedex = (props) => {
   const [lista, setLista] = useState(props.pokemones);
 
-  const agregarPokemon = (nuevoPokemon) => {
+  const ordenarPokemon = () => {
     setLista(
-      [...lista, nuevoPokemon].sort((x, y) => {
-        if (x.pokemon.id < y.pokemon.id) {
-          return -1;
-        }
-        if (y.pokemon.id > x.pokemon.id) {
-          return 1;
-        }
-        return 0;
+      [...lista].sort((x, y) => {
+        return x.id.localeCompare(y.id);
       })
     );
-  };
-
-  const unaFunc = () => {
-    return null;
   };
 
   const cartaDetalles = () => {
     return lista.map((pokemon) => <Carta pokemon={pokemon} key={pokemon.id} />);
   };
 
+  const unaFunc = (ev) => {
+    console.log(ev);
+  };
   return (
     <div className="contenedor-pokedex">
       <nav>
         <img src={pokebola} alt="Pokebola" className="pokebola" />
         <h1>Pokédex</h1>
-        <button id="botonOrdenar" onClick={() => null}>
+        <button id="botonOrdenar" onClick={ordenarPokemon}>
           <img src={flechaAZ} alt="FlechaAZ" className="flecha-az" />
         </button>
       </nav>
