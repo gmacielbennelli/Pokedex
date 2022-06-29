@@ -21,6 +21,10 @@ export const Pokedex = (props) => {
     );
   };
 
+  const unaFunc = () => {
+    return null;
+  };
+
   const cartaDetalles = () => {
     return lista.map((pokemon) => <Carta pokemon={pokemon} key={pokemon.id} />);
   };
