@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Pokedex from "../Pokedex/Pokedex";
 import "./Detalles.css";
-import flecha from "../../imagenes/arrow-left.svg";
+import flecha from "../../imagenes/flechatrasblanco.png";
 import flechaDerecha from "../../imagenes/Frame.svg";
 import flechaIzquierda from "../../imagenes/Frame.svg";
 

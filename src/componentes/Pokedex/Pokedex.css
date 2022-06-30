@@ -80,6 +80,7 @@ h1 {
 .box-cartas {
     display: flex;
     flex-wrap: wrap;
+    align-content: flex-start;
     width: 800px;
     height: 800px;
     margin: 20px;
