@@ -53,6 +53,11 @@ button:hover{
     transform: scale(1.05);
 }
 
+button:hover {
+    transform: scale(1.15);
+}
+
+
 h1 {
     margin-right: 300px;
     font-size: 50px;
