@@ -46,9 +46,12 @@ button {
     user-select: none;
     background-color: white;
     margin-right: 20px;
-    
-    
 }
+
+button:hover {
+    transform: scale(1.15);
+}
+
 
 h1 {
     margin-right: 300px;
