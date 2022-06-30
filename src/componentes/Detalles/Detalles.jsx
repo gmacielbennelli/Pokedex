@@ -5,15 +5,16 @@ import flecha from "../../imagenes/arrow-left.svg";
 import flechaDerecha from "../../imagenes/Frame.svg";
 import flechaIzquierda from "../../imagenes/Frame.svg";
 
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const Detalles = (props) => {
   let { nombreEnUrl } = useParams();
 
-  const pokemon = props.pokemones.find(
+  const pokemonIndex = props.pokemones.findIndex(
     (elem) => nombreEnUrl.toLowerCase() === elem.nombre.toLowerCase()
   );
-  console.log(pokemon, "fede");
+  const pokemon = props.pokemones[pokemonIndex];
+
   const imagen = require(`../../imagenes/${pokemon.nombre.toLowerCase()}.png`);
 
   return (
@@ -27,14 +28,30 @@ const Detalles = (props) => {
         <h2 style={{ color: "white" }}>{pokemon.id}</h2>
       </div>
       <div className="foto-pokemon">
-        <img
-          src={flechaIzquierda}
-          alt="flecha"
-          className="imagen-flecha"
-          style={{ transform: "rotate(180deg)", color: "inverse" }}
-        />
+        {pokemonIndex !== 0 && (
+          <Link
+            to={`/detalles-pokemon/${props.pokemones[
+              pokemonIndex - 1
+            ].nombre.toLowerCase()}`}
+          >
+            <img
+              src={flechaIzquierda}
+              alt="flecha"
+              className="imagen-flecha"
+              style={{ transform: "rotate(180deg)" }}
+            />
+          </Link>
+        )}
         <img src={imagen} alt="foto-pokemon" />
-        <img src={flechaDerecha} alt="flecha" className="imagen-flecha" />
+        {pokemonIndex !== props.pokemones.length - 1 && (
+          <Link
+            to={`/detalles-pokemon/${props.pokemones[
+              pokemonIndex + 1
+            ].nombre.toLowerCase()}`}
+          >
+            <img src={flechaDerecha} alt="flecha" className="imagen-flecha" />
+          </Link>
+        )}
       </div>
       <div className="contenedor-informacion-pokemon">
         <div className="tipo-pokemon">

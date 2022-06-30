@@ -45,9 +45,6 @@ export const Pokedex = (props) => {
     return lista.map((pokemon) => <Carta pokemon={pokemon} key={pokemon.id} />);
   };
 
-  const unaFunc = (ev) => {
-    console.log(ev);
-  };
   return (
     <div className="contenedor-pokedex">
       <nav>
