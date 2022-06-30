@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import Pokedex from "../Pokedex/Pokedex";
 import "./Detalles.css";
 import flecha from "../../imagenes/arrow-left.svg";
+import flechaDerecha from "../../imagenes/Frame.svg";
+import flechaIzquierda from "../../imagenes/Frame.svg";
+
 import { useParams } from "react-router-dom";
 
 const Detalles = (props) => {
@@ -24,7 +27,14 @@ const Detalles = (props) => {
         <h2 style={{ color: "white" }}>{pokemon.id}</h2>
       </div>
       <div className="foto-pokemon">
+        <img
+          src={flechaIzquierda}
+          alt="flecha"
+          className="imagen-flecha"
+          style={{ transform: "rotate(180deg)", color: "inverse" }}
+        />
         <img src={imagen} alt="foto-pokemon" />
+        <img src={flechaDerecha} alt="flecha" className="imagen-flecha" />
       </div>
       <div className="contenedor-informacion-pokemon">
         <div className="tipo-pokemon">

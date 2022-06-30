@@ -2,6 +2,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ; */
 }
 
 .contenedor-pokedex {
@@ -46,8 +47,10 @@ button {
     user-select: none;
     background-color: white;
     margin-right: 20px;
-    
-    
+}
+
+button:hover{
+    transform: scale(1.05);
 }
 
 h1 {
