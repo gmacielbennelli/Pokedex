@@ -29,11 +29,10 @@ text-align: center;
 background: white url(../../imagenes/lupa.png) no-repeat 350px center ;
 
 }
+.input:focus{
+    background: unset;
+}
 
-/* .inputonclick  {
-background: none;
-
-} */
 
 .pokebola {
     height: 40px;
@@ -83,9 +82,10 @@ h1 {
     flex-wrap: wrap;
     width: 800px;
     height: 800px;
-    margin: 5px;
-    justify-content: space-between;
-    align-items: center;
+    margin: 10px;
+    gap: 10px;
+    /* justify-content: space-between;
+    align-items: center; */
 
 }
 
