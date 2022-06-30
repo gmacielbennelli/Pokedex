@@ -25,9 +25,14 @@ height: 30px;
 border-radius: 10px;
 border: 1px solid gray;
 text-align: center; 
- 
+background: white url(../../imagenes/lupa.png) no-repeat 350px center ;
 
 }
+
+/* .inputonclick  {
+background: none;
+
+} */
 
 .pokebola {
     height: 40px;
