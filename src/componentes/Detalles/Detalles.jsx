@@ -80,12 +80,96 @@ const Detalles = (props) => {
           </h2>
         </div>
         <div className="ataque-defensa">
-          <h3 style={{ color: pokemon.color }}>HP {pokemon.HP} </h3>
-          <h3 style={{ color: pokemon.color }}>ATK {pokemon.ATK} </h3>
-          <h3 style={{ color: pokemon.color }}>DEF {pokemon.DEF} </h3>
-          <h3 style={{ color: pokemon.color }}>SATK {pokemon.SATK} </h3>
-          <h3 style={{ color: pokemon.color }}>SDEF {pokemon.SDEF} </h3>
-          <h3 style={{ color: pokemon.color }}>SPD {pokemon.SPD} </h3>
+          <div className="contenedor-barra">
+            <h3 style={{ color: pokemon.color }}>HP {pokemon.HP} </h3>
+            <div
+              className="barra-poder"
+              style={{ backgroundColor: `${pokemon.color}25` }}
+            >
+              <div
+                className="w3-grey"
+                style={{
+                  width: `${pokemon.HP}%`,
+                  backgroundColor: pokemon.color,
+                }}
+              ></div>
+            </div>
+          </div>
+          <div className="contenedor-barra">
+            <h3 style={{ color: pokemon.color }}>ATK {pokemon.ATK} </h3>
+            <div
+              className="barra-poder"
+              style={{ backgroundColor: `${pokemon.color}25` }}
+            >
+              <div
+                className="w3-grey"
+                style={{
+                  width: `${pokemon.ATK}%`,
+                  backgroundColor: pokemon.color,
+                }}
+              ></div>
+            </div>
+          </div>
+          <div className="contenedor-barra">
+            <h3 style={{ color: pokemon.color }}>DEF {pokemon.DEF} </h3>
+            <div
+              className="barra-poder"
+              style={{ backgroundColor: `${pokemon.color}25` }}
+            >
+              <div
+                className="w3-grey"
+                style={{
+                  width: `${pokemon.DEF}%`,
+                  backgroundColor: pokemon.color,
+                }}
+              ></div>
+            </div>
+          </div>
+          <div className="contenedor-barra">
+            <h3 style={{ color: pokemon.color }}>SATK {pokemon.SATK} </h3>
+            <div
+              className="barra-poder"
+              style={{ backgroundColor: `${pokemon.color}25` }}
+            >
+              <div
+                className="w3-grey"
+                style={{
+                  width: `${pokemon.SATK}%`,
+                  backgroundColor: pokemon.color,
+                }}
+              ></div>
+            </div>
+          </div>
+          <div className="contenedor-barra">
+            <h3 style={{ color: pokemon.color }}>SDEF {pokemon.SDEF} </h3>
+            <div
+              className="barra-poder"
+              style={{ backgroundColor: `${pokemon.color}25` }}
+            >
+              <div
+                className="w3-grey"
+                style={{
+                  width: `${pokemon.SDEF}%`,
+                  backgroundColor: pokemon.color,
+                }}
+              ></div>
+            </div>
+          </div>
+          <div className="contenedor-barra">
+            <h3 style={{ color: pokemon.color }}>SPD {pokemon.SPD} </h3>
+            <div
+              className="barra-poder"
+              style={{ backgroundColor: `${pokemon.color}25` }}
+            >
+              <div
+                className="w3-grey"
+                style={{
+                  width: `${pokemon.SPD}%`,
+                  backgroundColor: pokemon.color,
+                }}
+              ></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
